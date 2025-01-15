@@ -1,0 +1,13 @@
+let addBtn = document.getElementById('addBtn');
+
+// ADDITION
+addBtn.addEventListener('click', (event)=> {
+    event.preventDefault();
+
+    let inp1 = parseFloat(document.getElementById('num1').value);
+    let inp2 = parseFloat(document.getElementById('num2').value);
+    
+    let output = document.getElementById("displayOutput");
+    output.textContent = inp1 + inp2;
+});
+
