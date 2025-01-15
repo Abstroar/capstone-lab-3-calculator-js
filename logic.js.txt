@@ -1,5 +1,6 @@
 let addBtn = document.getElementById('addBtn');
 let subBtn = document.getElementById('subBtn');
+let mulBtn = document.getElementById('mulBtn');
 
 
 // ADDITION
@@ -24,4 +25,16 @@ subBtn.addEventListener('click', (event)=> {
     
     let output = document.getElementById("displayOutput");
     output.textContent = inp1 - inp2;
+});
+
+
+// MULTIPLICATION
+mulBtn.addEventListener('click', (event)=> {
+    event.preventDefault();
+    
+    let inp1 = parseFloat(document.getElementById('num1').value);
+    let inp2 = parseFloat(document.getElementById('num2').value);
+    
+    let output = document.getElementById("displayOutput");
+    output.textContent = inp1 * inp2;
 });
